@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  user-select: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Commissioner", sans-serif;
+  background: rgb(32, 27, 78);
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.input,
+.bodyContainer {
+  width: 100%;
+  height: auto;
+}
+
+.bodyContainer {
+  gap: 3rem;
+}
+.contents {
+  flex-grow: 1;
+}
+
+.image {
+  object-fit: cover;
+  width: 30%;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 765px) {
+  .image {
+    width: 70%;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cutout {
+  background: rgb(0, 0, 17);
+  border-radius: 0.5rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social span {
+  margin-left: 1rem;
 }
